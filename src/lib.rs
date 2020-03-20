@@ -1,6 +1,8 @@
 
 extern crate srtp2_sys as sys;
 
+use std::error;
+use std::fmt;
 use bytes::{BytesMut};
 
 #[derive(Debug)]
@@ -59,6 +61,14 @@ pub enum Error {
     WriteFail,
     Unknown(u32),
 }
+
+impl fmt::Display for Error {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "libsrtp2: {:?}", self)
+    }
+}
+
+impl error::Error for Error {}
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash)]
 pub struct KeyPair<'a> {
