@@ -11,6 +11,9 @@ keywords = ["srtp"]
 categories = ["multimedia", "network-programming"]
 license = "MIT OR Apache-2.0"
 
+[features]
+enable-debug-logging = ["srtp2-sys/enable-debug-logging"]
+
 [dependencies]
 srtp2-sys = "2.30"
 bytes = "0.4"
