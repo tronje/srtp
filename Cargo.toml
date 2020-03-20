@@ -17,4 +17,4 @@ dynamic-linking = ["srtp2-sys/dynamic-linking"]
 
 [dependencies]
 srtp2-sys = { git = "https://github.com/tronje/srtp2-sys", branch = "dynamic-linking" }
-bytes = "0.4"
+bytes = "0.5"
