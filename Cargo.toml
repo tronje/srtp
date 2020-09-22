@@ -28,6 +28,7 @@ build-libsrtp = ["srtp2-sys/build"]
 enable-openssl = ["openssl", "srtp2-sys/enable-openssl"]
 build-openssl = ["enable-openssl", "srtp2-sys/build-openssl"]
 dynamic-linking = ["srtp2-sys/dynamic-linking"]
+pre-generated-bindings = ["srtp2-sys/pre-generated-bindings"]
 
 [package.metadata.docs.rs]
 rustdoc-args = ["--cfg", "docsrs"]
