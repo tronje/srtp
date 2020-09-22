@@ -14,6 +14,7 @@ license = "MIT OR Apache-2.0"
 [features]
 enable-debug-logging = ["srtp2-sys/enable-debug-logging", "srtp2-sys/enable-log-stdout"]
 dynamic-linking = ["srtp2-sys/dynamic-linking"]
+pre-generated-bindings = ["srtp2-sys/pre-generated-bindings"]
 
 [dependencies]
 srtp2-sys = { git = "https://github.com/tronje/srtp2-sys", branch = "dynamic-linking" }
