@@ -31,8 +31,8 @@ impl Header {
 
         bytes.put_u8(b1);
         bytes.put_u8(b2);
-        bytes.put_u16_be(self.sequence);
-        bytes.put_u32_be(self.timestamp);
+        bytes.put_u16(self.sequence);
+        bytes.put_u32(self.timestamp);
 
         for _ in 0..payload_size {
             bytes.put_u8(0xAB);
