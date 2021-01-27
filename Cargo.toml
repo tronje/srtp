@@ -18,4 +18,4 @@ pre-generated-bindings = ["srtp2-sys/pre-generated-bindings"]
 
 [dependencies]
 srtp2-sys = { git = "https://github.com/tronje/srtp2-sys", branch = "dynamic-linking" }
-bytes = "0.5"
+bytes = "1.0"
