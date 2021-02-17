@@ -12,7 +12,7 @@ categories = ["multimedia", "network-programming"]
 license = "MIT OR Apache-2.0"
 
 [dependencies]
-srtp2-sys = { git = "https://github.com/tronje/srtp2-sys", branch = "dynamic-linking" }
+srtp2-sys = { git = "https://github.com/tronje/srtp2-sys" }
 paste = "1.0"
 foreign-types = "0.5"
 thiserror = "1.0"
